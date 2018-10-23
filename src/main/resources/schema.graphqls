@@ -1,0 +1,17 @@
+schema {
+    query: Query
+    mutation: Mutation
+    subscription: Subscription
+}
+type Mutation {
+    tweets: Tweet
+}
+type Query {
+    tweets: Tweet
+}
+type Subscription {
+    tweets: Tweet
+}
+type Tweet {
+    content: String!
+}

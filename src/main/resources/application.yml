@@ -1,0 +1,23 @@
+
+graphql:
+      servlet:
+               mapping: /graphql
+               enabled: true
+               corsEnabled: true
+graphiql:
+    mapping: /graphiql
+    endpoint:
+      graphql: /graphql
+      subscriptions: /subscriptions
+    static:
+      basePath: /
+    enabled: true
+    pageTitle: GraphiQL
+    cdn:
+        enabled: false
+        version: 0.11.11
+    props:
+        variables:
+            editorTheme: "solarized dark"
+server:
+  port: 8080
